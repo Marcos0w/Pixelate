@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pixelate - Design Colaborativo em Tempo Real</title>
+ 
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;700;800&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+
+    <!-- Prism.js (Syntax Highlighting) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism-tomorrow.min.css">
+ 
+    <!-- Nosso CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="header">
+        <div class="container">
+            <a href="#" class="logo">Pixelate</a>
+            <nav id="main-nav" class="main-nav">
+                <button id="nav-close-btn" class="nav-close-btn" aria-label="Fechar menu">&times;</button>
+                <ul>
+                    <li><a href="#features">Funcionalidades</a></li>
+                    <li><a href="#how-it-works">Como Funciona</a></li>
+                    <li><a href="#pricing">Preços</a></li>
+                    <li><a href="#testimonials">Depoimentos</a></li>
+                </ul>
+            </nav>
+            <div class="header-actions">
+                <button id="nav-open-btn" class="mobile-nav-toggle" aria-label="Abrir menu">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M3 6.75A.75.75 0 013.75 6h16.5a.75.75 0 010 1.5H3.75A.75.75 0 013 6.75zM3 12a.75.75 0 01.75-.75h16.5a.75.75 0 010 1.5H3.75A.75.75 0 013 12zm0 5.25a.75.75 0 01.75-.75h16.5a.75.75 0 010 1.5H3.75a.75.75 0 01-.75-.75z"></path></svg>
+                </button>
+                <button id="theme-toggle" aria-label="Alternar tema">
+                    <svg class="sun" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.25a.75.75 0 01.75.75v2.25a.75.75 0 01-1.5 0V3a.75.75 0 01.75-.75zM7.5 12a4.5 4.5 0 119 0 4.5 4.5 0 01-9 0zM18.894 6.106a.75.75 0 010 1.06l-1.591 1.59a.75.75 0 01-1.06-1.06l1.59-1.59a.75.75 0 011.06 0zM21.75 12a.75.75 0 01-.75.75h-2.25a.75.75 0 010-1.5h2.25a.75.75 0 01.75.75zM17.834 18.894a.75.75 0 01-1.06 0l-1.59-1.591a.75.75 0 111.06-1.06l1.59 1.59a.75.75 0 010 1.061zM12 21.75a.75.75 0 01-.75-.75v-2.25a.75.75 0 011.5 0v2.25a.75.75 0 01-.75-.75zM5.106 17.834a.75.75 0 010-1.06l1.59-1.591a.75.75 0 011.06 1.06l-1.59 1.59a.75.75 0 01-1.06 0zM3 12a.75.75 0 01.75-.75h2.25a.75.75 0 010 1.5H3.75A.75.75 0 013 12zM6.106 5.106a.75.75 0 011.06 0l1.591 1.59a.75.75 0 01-1.06 1.06l-1.59-1.59a.75.75 0 010-1.06z"/></svg>
+                    <svg class="moon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path fill-rule="evenodd" d="M9.528 1.718a.75.75 0 01.162.819A8.97 8.97 0 009 6a9 9 0 009 9 8.97 8.97 0 004.463-.948a.75.75 0 01.98.154a12.02 12.02 0 01-3.425 5.494A12.01 12.01 0 0112 21a12.01 12.01 0 01-9.472-4.592A12.02 12.02 0 019.528 1.718z" clip-rule="evenodd" /></svg>
+                </button>
+                <div id="auth-container">
+                    <!-- O JavaScript irá popular esta área -->
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="container">
+                <div class="hero-content">
+                    <h1 class="animate-on-load">Crie designs incríveis, juntos.</h1>
+                    <p class="animate-on-load">Pixelate é a ferramenta de design colaborativa que une equipes, da ideação ao protótipo final, em um único lugar.</p>
+                    <div class="hero-buttons animate-on-load">
+                        <a href="#pricing" class="btn btn-primary">Comece Grátis</a>
+                        <a href="#features" class="btn btn-secondary">Ver Funcionalidades</a>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-bg"></div>
+        </section>
+
+        <section class="trusted-by">
+            <div class="container">
+                <p>CONFIADO PELAS EQUIPES MAIS INOVADORAS DO MUNDO</p>
+                <div class="logos">
+                    <!-- Substitua por SVGs ou imagens reais dos seus clientes -->
+                    <span>TechCorp</span>
+                    <span>InnovateX</span>
+                    <span>DataSolutions</span>
+                    <span>NextGen Apps</span>
+                </div>
+            </div>
+        </section>
+
+        <section id="features" class="features">
+            <div class="container">
+                <h2 class="section-title animate-on-scroll">Por que escolher o Pixelate?</h2>
+                <p class="section-subtitle animate-on-scroll">Tudo que sua equipe precisa para criar designs de alta qualidade, mais rápido.</p>
+                <div class="bento-grid">
+                    <div class="bento-item animate-on-scroll" style="grid-column: span 2;">
+                        <h3>Colaboração em Tempo Real</h3>
+                        <p>Veja os cursores da sua equipe, deixe comentários e edite em conjunto. Mantenha todos na mesma página, literalmente.</p>
+                    </div>
+                    <div class="bento-item animate-on-scroll">
+                        <h3>Editor Intuitivo</h3>
+                        <p>Uma interface de arrastar e soltar poderosa e fácil de usar, que permite que qualquer pessoa crie designs impressionantes.</p>
+                    </div>
+                    <div class="bento-item animate-on-scroll">
+                        <h3>Bibliotecas de Componentes</h3>
+                        <p>Crie, gerencie e compartilhe componentes de design reutilizáveis para garantir consistência em todos os seus projetos.</p>
+                    </div>
+                    <div class="bento-item animate-on-scroll" style="grid-column: span 2;">
+                        <h3>Prototipagem Avançada</h3>
+                        <p>Crie fluxos de usuário realistas com transições inteligentes e micro-interações para validar suas ideias.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="how-it-works" class="how-it-works">
+            <div class="container">
+                <h2 class="section-title animate-on-scroll">Do Rascunho à Realidade</h2>
+                <p class="section-subtitle animate-on-scroll">Veja como o Pixelate transforma o fluxo de trabalho da sua equipe.</p>
+
+                <div class="carousel-container animate-on-scroll">
+                    <div class="carousel-nav">
+                        <button class="carousel-tab active" data-target="tab-1">1. Prototipe</button>
+                        <button class="carousel-tab" data-target="tab-2">2. Colabore</button>
+                        <button class="carousel-tab" data-target="tab-3">3. Exporte</button>
+                    </div>
+
+                    <div class="carousel-content">
+                        <!-- Tab 1: API REST -->
+                        <div id="tab-1" class="carousel-item active">
+                            <h3>Crie protótipos interativos rapidamente.</h3>
+                            <p>Transforme suas ideias estáticas em experiências navegáveis. Conecte telas, adicione animações e simule a interação do usuário final para validar conceitos antes de escrever qualquer código.</p>
+                            <div class="code-wrapper">
+                                <!-- Imagem representando o processo de prototipagem -->
+                                <img src="https://images.unsplash.com/photo-1581291518857-4e27b48ff24e?auto=format&fit=crop&w=800&q=80" alt="Exemplo de prototipagem de interface" style="width:100%; height: 300px; object-fit: cover; border-radius: 8px;">
+                            </div>
+                        </div>
+
+                        <!-- Tab 2: Banco de Dados -->
+                        <div id="tab-2" class="carousel-item">
+                            <h3>Receba feedback instantâneo da sua equipe.</h3>
+                            <p>Convide stakeholders para comentar diretamente no seu design. Resolva discussões e itere mais rápido, mantendo todo o histórico de decisões centralizado no projeto.</p>
+                            <div class="code-wrapper">
+                                <!-- Imagem representando o processo de colaboração -->
+                                <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&w=800&q=80" alt="Exemplo de colaboração em equipe" style="width:100%; height: 300px; object-fit: cover; border-radius: 8px;">
+                            </div>
+                        </div>
+
+                        <!-- Tab 3: Processamento -->
+                        <div id="tab-3" class="carousel-item">
+                            <h3>Exporte assets prontos para o desenvolvimento.</h3>
+                            <p>Gere imagens, SVGs e especificações de CSS com um clique. Facilite a vida dos desenvolvedores e garanta que o produto final seja fiel ao design original.</p>
+                            <div class="code-wrapper">
+                                <!-- Imagem representando o processo de exportação de código -->
+                                <img src="https://images.unsplash.com/photo-1542831371-29b0f74f9713?auto=format&fit=crop&w=800&q=80" alt="Exemplo de exportação de código" style="width:100%; height: 300px; object-fit: cover; border-radius: 8px;">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="testimonials" class="testimonials">
+            <div class="container">
+                <h2 class="section-title animate-on-scroll">O que nossos usuários dizem</h2>
+                <div class="testimonial-grid">
+                    <div class="testimonial-card animate-on-scroll">
+                        <p>"O Pixelate transformou nosso fluxo de design. A colaboração em tempo real é impecável e acelerou nossas entregas em 50%."</p>
+                        <footer>
+                            <img src="img/download.jpg" alt="Foto de Ana Souza">
+                            <div>
+                                <strong>Ana Souza</strong>
+                                <span>Product Designer na TechCorp</span>
+                            </div>
+                        </footer>
+                    </div>
+                    <div class="testimonial-card animate-on-scroll">
+                        <p>"Finalmente uma ferramenta que designers e desenvolvedores amam usar. A exportação de assets é um divisor de águas."</p>
+                        <footer>
+                            <img src="img/download (1).jpg" alt="Foto de Bruno Lima">
+                            <div>
+                                <strong>Bruno Lima</strong>
+                                <span>Head de Produto na InnovateX</span>
+                            </div>
+                        </footer>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="pricing" class="pricing">
+            <div class="container">
+                <h2 class="section-title animate-on-scroll">Planos e Preços</h2>
+                <p class="section-subtitle animate-on-scroll">Escolha o plano que melhor se adapta às suas necessidades.</p>
+                <div class="pricing-grid">
+                    <div class="pricing-card animate-on-scroll">
+                        <h3>Starter</h3>
+                        <p class="price">Grátis</p>
+                        <ul>
+                            <li>3 Projetos Ativos</li>
+                            <li>2 Editores por Projeto</li>
+                            <li>Suporte da Comunidade</li>
+                        </ul>
+                        <button class="btn btn-secondary select-plan-btn" data-plan="Starter">Comece Agora</button>
+                    </div>
+                    <div class="pricing-card featured animate-on-scroll">
+                        <h3>Pro</h3>
+                        <p class="price">$12<span>/editor/mês</span></p>
+                        <ul>
+                            <li data-pro-feature>Projetos Ilimitados</li>
+                            <li data-pro-feature>Bibliotecas de Equipe</li>
+                            <li>Suporte Prioritário</li>
+                        </ul>
+                        <button class="btn btn-primary select-plan-btn" data-plan="Pro">Escolher Pro</button>
+                    </div>
+                    <div class="pricing-card animate-on-scroll">
+                        <h3>Enterprise</h3>
+                        <p class="price">Custom</p>
+                        <ul>
+                            <li>Segurança Avançada (SSO)</li>
+                            <li>Controles de Admin</li>
+                            <li>Suporte Dedicado</li>
+                        </ul>
+                        <button class="btn btn-secondary select-plan-btn" data-plan="Enterprise">Fale Conosco</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="cta" class="get-started">
+            <div class="container">
+                <h2 class="section-title animate-on-scroll">Pronto para transformar suas ideias em realidade?</h2>
+                <p class="section-subtitle animate-on-scroll">Crie sua conta gratuita no Pixelate e comece a projetar em minutos. Não é necessário cartão de crédito.</p>
+                <div class="hero-buttons animate-on-scroll">
+                    <a href="#pricing" class="btn btn-primary">Crie sua conta grátis</a>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-about">
+                    <a href="#" class="logo">Pixelate</a>
+                    <p>Design colaborativo para equipes modernas.</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Produto</h4>
+                    <ul>
+                        <li><a href="#features">Funcionalidades</a></li>
+                        <li><a href="#pricing">Preços</a></li>
+                        <li><a href="#">Integrações</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>Empresa</h4>
+                    <ul>
+                        <li><a href="#">Sobre Nós</a></li>
+                        <li><a href="#">Contato</a></li>
+                        <li><a href="#">Carreiras</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Pixelate. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Prism.js (JS) -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/plugins/autoloader/prism-autoloader.min.js"></script>
+ 
+    <!-- Nosso JS -->
+    <script src="main.js"></script>
+</body>
+
+<!-- =======================================================
+     MODAL DE AUTENTICAÇÃO (LOGIN/CADASTRO)
+     ======================================================== -->
+<div class="auth-modal" id="auth-modal" aria-hidden="true">
+  <div class="auth-modal__overlay" tabindex="-1" data-micromodal-close>
+    <div class="auth-modal__container" role="dialog" aria-modal="true" aria-labelledby="auth-modal-title">
+      <header class="auth-modal__header">
+        <div class="auth-modal__tabs">
+          <button class="auth-modal__tab active" data-form="login">Entrar</button>
+          <button class="auth-modal__tab" data-form="register">Cadastrar</button>
+        </div>
+        <button class="auth-modal__close" aria-label="Fechar modal" data-micromodal-close>&#x2715;</button>
+      </header>
+      <main class="auth-modal__content">
+        <!-- Formulário de Login -->
+        <form id="login-form" class="auth-form active">
+          <h2 id="auth-modal-title">Acesse sua conta</h2>
+          <p class="auth-form-message" id="login-message"></p>
+          <div class="form-group">
+            <label for="login-identifier">Email ou Usuário</label>
+            <input id="login-identifier" type="text" required>
+          </div>
+          <div class="form-group">
+            <label for="login-password">Senha</label>
+            <input id="login-password" type="password" required>
+          </div>
+          <button type="submit" class="btn btn-primary btn-full">Entrar</button>
+        </form>
+        <!-- Formulário de Cadastro -->
+        <form id="register-form" class="auth-form">
+          <h2>Crie sua conta</h2>
+          <p class="auth-form-message" id="register-message"></p>
+          <div class="form-group">
+            <label for="register-username">Nome de usuário</label>
+            <input id="register-username" type="text" required>
+          </div>
+          <div class="form-group">
+            <label for="register-email">Email</label>
+            <input id="register-email" type="email" required>
+          </div>
+          <div class="form-group">
+            <label for="register-password">Senha</label>
+            <input id="register-password" type="password" required>
+          </div>
+          <button type="submit" class="btn btn-primary btn-full">Criar conta</button>
+        </form>
+      </main>
+    </div>
+  </div>
+</div>
+
+<!-- =======================================================
+     MODAL DE CONFIRMAÇÃO DE PAGAMENTO
+     ======================================================== -->
+<div class="payment-modal" id="payment-modal" aria-hidden="true">
+    <div class="payment-modal__overlay" tabindex="-1">
+      <div class="payment-modal__container" role="dialog" aria-modal="true">
+        <header class="payment-modal__header">
+          <h2 class="payment-modal__title">Confirmar Assinatura</h2>
+          <button class="payment-modal__close" id="payment-close-btn" aria-label="Fechar">&#x2715;</button>
+        </header>
+        <main class="payment-modal__content">
+          <p>Você está prestes a assinar o plano <strong>Pro</strong> por <strong>$12/mês</strong>.</p>
+          <p>Este é um projeto de demonstração. Ao clicar em "Confirmar Pagamento", o plano será atribuído à sua conta sem cobrança real.</p>
+        </main>
+        <footer class="payment-modal__footer">
+          <button class="btn btn-secondary" id="payment-cancel-btn">Cancelar</button>
+          <button class="btn btn-primary" id="payment-confirm-btn">Confirmar Pagamento</button>
+        </footer>
+      </div>
+    </div>
+</div>
+</html>
