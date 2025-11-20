@@ -1,6 +1,6 @@
 # Pixelate - Landing Page com Sistema de Autenticação
 
-![Captura de Tela do Projeto Pixelate](https://imgur.com/a/Edxs2zo)
+
 
 
 
@@ -133,4 +133,5 @@ _Este projeto foi criado como parte de um portfólio de desenvolvimento e para f
 ```
 
 ```
+
 
