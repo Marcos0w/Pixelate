@@ -1,8 +1,8 @@
 # Pixelate - Landing Page com Sistema de Autenticação
 
-![Captura de Tela do Projeto Pixelate](https://placehold.co/1200x600/1f2937/f9fafb?text=Insira+um+print+do+seu+site+aqui)
+![Captura de Tela do Projeto Pixelate](https://imgur.com/a/Edxs2zo)
 
-> **Nota:** Para uma melhor apresentação, substitua a imagem acima por uma captura de tela ou um GIF do seu projeto em ação!
+
 
 Este é o repositório do **Pixelate**, uma landing page moderna e totalmente funcional para um produto SaaS fictício. O projeto foi desenvolvido com HTML, CSS e JavaScript puros, demonstrando a criação de uma interface de usuário rica e interativa sem o uso de frameworks.
 
@@ -133,3 +133,4 @@ _Este projeto foi criado como parte de um portfólio de desenvolvimento e para f
 ```
 
 ```
+
